@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siniestro Café de Especialidad - Sobre nosotros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#000000',
+                            gold: '#D4AF37',
+                            light: '#F9F8F6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-light text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-brand-dark flex items-center gap-2">
+                <span>☕ Siniestro</span>
+            </a>
+            <div class="hidden md:flex space-x-1 items-center">
+                <a href="index.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium transition">Inicio</a>
+                <a href="about.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Sobre nosotros</a>
+                <a href="services.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium transition">Menú</a>
+                <a href="gallery.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium transition">Galería</a>
+                <a href="booking.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium transition">Reservar</a>
+                <a href="contacts.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium transition">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-6 py-4 space-y-2">
+        <a href="index.html" class="block hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium">Inicio</a>
+        <a href="about.html" class="block bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Sobre nosotros</a>
+        <a href="services.html" class="block hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium">Menú</a>
+        <a href="gallery.html" class="block hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium">Galería</a>
+        <a href="booking.html" class="block hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium">Reservar</a>
+        <a href="contacts.html" class="block hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium">Contacto</a>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-100 py-3 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-gray-500">
+            <a href="index.html" class="hover:underline">Inicio</a> > <span>Sobre nosotros</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <section class="py-16 px-6 bg-white border-b border-gray-200">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Sobre Siniestro Café</h1>
+            <p class="text-lg text-gray-600">Conoce nuestra historia, el equipo y lo que nos hace únicos en Madrid.</p>
+        </div>
+    </section>
+
+    <!-- About Content & Facts -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Nuestra Esencia</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Siniestro Café de Especialidad es un acogedor y encantador establecimiento situado en la calle del Conde Duque, en pleno centro de Madrid. Conocido por su excelente ambiente ecléctico, que incluye libros de fotografía queer y música de los 90 a un volumen perfecto, se ha convertido en un auténtico referente del barrio.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    El proyecto destaca por el trato cercano y amable de su equipo, ofreciendo una cuidada selección de cafés de especialidad, interpretaciones creativas e innovadoras combinaciones de sabores, además de deliciosas opciones de repostería casera como rollos de canela.
+                </p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=80" alt="Cafetería interior" class="rounded-2xl shadow-xl w-full object-cover h-96">
+            </div>
+        </div>
+
+        <!-- Unique Facts -->
+        <div class="bg-amber-50 rounded-3xl p-10 border border-amber-100 mb-20">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Lo que nos hace especiales</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="font-bold text-amber-600 text-lg mb-2">📍 Ubicación emblemática</div>
+                    <p class="text-gray-600">Ubicado en la emblemática zona de Conde Duque en el centro de Madrid.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="font-bold text-amber-600 text-lg mb-2">📚 Ambiente ecléctico</div>
+                    <p class="text-gray-600">Ambiente único con presencia de libros de fotografía queer y estética cuidada.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="font-bold text-amber-600 text-lg mb-2">🎶 Eventos musicales</div>
+                    <p class="text-gray-600">Eventos de música íntima durante las tardes con éxitos de los 90.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm">
+                    <div class="font-bold text-amber-600 text-lg mb-2">☕ Sabores innovadores</div>
+                    <p class="text-gray-600">Reconocido por sus innovadoras combinaciones (como café con fresa y albahaca) y repostería artesanal.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team -->
+        <div class="text-center">
+            <h3 class="text-3xl font-bold text-gray-900 mb-12">Nuestro Equipo</h3>
+            <div class="flex justify-center">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 max-w-sm w-full">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Juan" class="w-32 h-32 rounded-full mx-auto object-cover mb-4 shadow-md">
+                    <h4 class="text-xl font-bold text-gray-900">Juan</h4>
+                    <p class="text-amber-600 font-medium text-sm mt-1">Host / Barista</p>
+                    <p class="text-gray-500 text-sm mt-4">Apasionado del café de especialidad y encargado de ofrecerte la mejor acogida en Madrid.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Siniestro Café de Especialidad</h3>
+                <p class="text-sm text-gray-400">Tu rincón de café de especialidad en el corazón de Madrid. Ambiente ecléctico, excelente música y el mejor trato.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Contacto</h3>
+                <p class="text-sm text-gray-400 mb-2">C. del Conde Duque, 5, Centro, 28015 Madrid, Spain</p>
+                <p class="text-sm text-gray-400 mb-2">Tel: +34 667 23 06 31</p>
+                <p class="text-sm text-gray-400">Email: contacto@siniestromadrid.es</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Enlaces rápidos</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Sobre nosotros</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Menú</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Galería</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-400 transition">Reservar</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2025 Siniestro Café de Especialidad. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
