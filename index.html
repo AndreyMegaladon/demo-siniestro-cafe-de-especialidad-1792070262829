@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siniestro Café de Especialidad - Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#000000',
+                            gold: '#D4AF37',
+                            light: '#F9F8F6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-light text-gray-800 font-sans">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 h-20 flex items-center shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-brand-dark flex items-center gap-2">
+                <span>☕ Siniestro</span>
+            </a>
+            <div class="hidden md:flex space-x-1 items-center">
+                <a href="index.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Inicio</a>
+                <a href="about.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium transition">Sobre nosotros</a>
+                <a href="services.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium transition">Menú</a>
+                <a href="gallery.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium transition">Galería</a>
+                <a href="booking.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium transition">Reservar</a>
+                <a href="contacts.html" class="hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium transition">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-6 py-4 space-y-2">
+        <a href="index.html" class="block bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Inicio</a>
+        <a href="about.html" class="block hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium">Sobre nosotros</a>
+        <a href="services.html" class="block hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium">Menú</a>
+        <a href="gallery.html" class="block hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium">Galería</a>
+        <a href="booking.html" class="block hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium">Reservar</a>
+        <a href="contacts.html" class="block hover:bg-amber-50 text-gray-700 rounded-lg px-4 py-2 font-medium">Contacto</a>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-100 py-3 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-gray-500">
+            <span>Inicio</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="min-h-[80vh] relative bg-cover bg-center flex items-center justify-center text-center px-6" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80')">
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="relative z-10 max-w-4xl mx-auto text-white space-y-6">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight">Siniestro Café de Especialidad</h1>
+            <p class="text-xl md:text-2xl text-gray-200 font-light">Tu rincón de café de especialidad en el corazón de Madrid</p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="booking.html" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-2xl transition">Reservar una mesa</a>
+                <a href="services.html" class="bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white px-8 py-4 rounded-xl text-lg font-semibold transition">Ver Menú</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Highlights / Featured Menu -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nuestros Destacados</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Descubre algunos de nuestros productos más populares seleccionados especialmente para ti.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="Cortado" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full">Café</span>
+                    <h3 class="text-xl font-bold text-gray-900 mt-3">Cortado</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Espresso con un toque de leche texturizada, altamente recomendado por los clientes habituales.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" alt="Café Especial" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full">Café</span>
+                    <h3 class="text-xl font-bold text-gray-900 mt-3">Café Especial / Creativo</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Interpretaciones creativas y combinaciones de sabores únicas, como café con fresa y albahaca.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-gray-100">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Cinnamon Roll" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-amber-600 bg-amber-50 px-3 py-1 rounded-full">Repostería</span>
+                    <h3 class="text-xl font-bold text-gray-900 mt-3">Cinnamon Roll</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Rollo de canela casero y recién horneado con una textura inigualable.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <a href="services.html" class="inline-block bg-gray-900 hover:bg-gray-800 text-white font-semibold px-8 py-3 rounded-xl transition">Ver menú completo</a>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="bg-gray-100 py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Lo que dicen nuestros clientes</h2>
+                <p class="text-gray-600">Experiencias reales compartidas en Google Maps.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-md relative">
+                    <div class="flex items-center space-x-1 text-amber-500 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-700 italic mb-6">"Siniestro Café de Especialidad is a cozy and charming cafe in Madrid, known for its friendly and delightful baristas. The small space is well-decorated, offering delicious coffee and food options."</p>
+                    <div class="font-bold text-gray-900">Cliente de Google</div>
+                    <div class="text-xs text-gray-400 mt-1">Google Maps</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md relative">
+                    <div class="flex items-center space-x-1 text-amber-500 mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-700 italic mb-6">"Customers appreciate the local favorite vibe, intimate music events, and the caring host Juan. The eclectic ambiance with queer photography books, cinnamon rolls, and 90s hits playing at the perfect volume creates a welcoming atmosphere."</p>
+                    <div class="font-bold text-gray-900">Cliente habitual</div>
+                    <div class="text-xs text-gray-400 mt-1">Google Maps</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Siniestro Café de Especialidad</h3>
+                <p class="text-sm text-gray-400">Tu rincón de café de especialidad en el corazón de Madrid. Ambiente ecléctico, excelente música y el mejor trato.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Contacto</h3>
+                <p class="text-sm text-gray-400 mb-2">C. del Conde Duque, 5, Centro, 28015 Madrid, Spain</p>
+                <p class="text-sm text-gray-400 mb-2">Tel: +34 667 23 06 31</p>
+                <p class="text-sm text-gray-400">Email: contacto@siniestromadrid.es</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Enlaces rápidos</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="about.html" class="hover:text-amber-400 transition">Sobre nosotros</a></li>
+                    <li><a href="services.html" class="hover:text-amber-400 transition">Menú</a></li>
+                    <li><a href="gallery.html" class="hover:text-amber-400 transition">Galería</a></li>
+                    <li><a href="booking.html" class="hover:text-amber-400 transition">Reservar</a></li>
+                    <li><a href="contacts.html" class="hover:text-amber-400 transition">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2025 Siniestro Café de Especialidad. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
